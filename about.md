@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+We are some random security guys and use this blog to publish some stuff for the infosec community.
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+### Contact us
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Just use Twitter and tag it by #StarhackerZ. We will then reach out to you.
