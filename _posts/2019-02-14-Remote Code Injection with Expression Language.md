@@ -35,6 +35,7 @@ Suppose the following lines of Code are found in an application.
 index.xhtml gets “name” parameter from the request and sends it to bingo():
  
  
+ ----
  
  
 ![_config.yml]({{ site.baseurl }}/images/RCE-EL/3.PNG)
@@ -42,13 +43,25 @@ index.xhtml gets “name” parameter from the request and sends it to bingo():
 Bing() evaluates argument dynamically and echo the value of “name” request parameter to the browser
  
  
- 
+ ----
  
  
  ![_config.yml]({{ site.baseurl }}/images/RCE-EL/1.PNG)
  
 Example, the get request with parameter "name=" is sent and its value is echo in page.
 
+
+----
+
+**Detect & Identify**
+
+In a black box testing scenario finding these vulnerabilities can be done by sending valid EL.
+
+Such as:
+
+ - ${“aaaa”} (the literal string “aaaa”) and then searching the response text for such data.
+ - ${99999+1} and then searching the response text for 100000.
+ - #{7+7} or ${{7*7}} and then searching the response text for 49.
 
 
 test2
