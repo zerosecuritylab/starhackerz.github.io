@@ -10,6 +10,7 @@ An expression language makes it possible to easily access application data. For 
 EL Injection occurs when user input is embedded in an unsafe manner. EL Injection are very serious and lead to complete compromise of the application's data and functionality and often obtain Remote Code Execution (RCE), turning every vulnerable application into a potential pivot point. Also EL Injection can be used to bypass input filters and any HttpOnly protection for application pages vulnerable to cross-site scripting (XSS) [2].
 
 
+
 **The core problem**
 
 To demonstrate the vulnerability. We have two test cases.
@@ -23,28 +24,29 @@ First test case help us to understand Expression language. We can see an error m
 However, in second test case we demonstrate some tricks how an attacker can still develop a working payload and get remote code execution in black box if he cannot see any error message or stack trace.
 
 
+
  **First vulnerable Application**
 
 Suppose the following lines of Code are found in an application.
 
 ![_config.yml]({{ site.baseurl }}/images/RCE-EL/2.PNG)
 
- 1.  index.xhtml gets “name” parameter from the request and sends it to bingo():
+1.  index.xhtml gets “name” parameter from the request and sends it to bingo():
  
  
 ![_config.yml]({{ site.baseurl }}/images/RCE-EL/3.PNG)
 
- 2. Bing() evaluates argument dynamically and echo the value of “name” request parameter to the browser
+2. Bing() evaluates argument dynamically and echo the value of “name” request parameter to the browser
  
  
  
  ![_config.yml]({{ site.baseurl }}/images/RCE-EL/1.PNG)
  
- 3. Example, the get request with parameter "name=" is sent and its value is echo in page.
+3. Example, the get request with parameter "name=" is sent and its value is echo in page.
 
 
 
-test
+test1
 
 PDF version of white paper can be downloaded from:
 [ExpressionLanguageInjection.pdf](https://www.exploit-db.com/docs/46303)
