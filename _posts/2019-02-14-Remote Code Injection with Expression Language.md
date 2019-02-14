@@ -73,8 +73,9 @@ Once it is confirmed that anything between expression delimiters is evaluated fr
 
 **Convert string to Uppercase:**
 
-    Payload: ${{'abc'.toUpperCase()}}
-    Output: ABC
+   | Payload: ${{'abc'.toUpperCase()}} |
+   | Output: ABC  |
+   |--------------|
 
 
 **Concatenate two strings:**
