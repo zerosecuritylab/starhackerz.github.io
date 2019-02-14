@@ -3,7 +3,7 @@ layout: post
 title: Remote Code execution with EL Injection Vulnerabilities
 ---
 
-## Introduction
+# Introduction
 
 An expression language makes it possible to easily access application data. For example, the JSP expression language allows a page author to access a bean using simple syntax such as ${name} for a simple variable [1].
 
