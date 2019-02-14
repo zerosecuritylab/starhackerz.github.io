@@ -67,8 +67,27 @@ Such as:
 
  
  ![_config.yml]({{ site.baseurl }}/images/RCE-EL/4.PNG)
+
 In above example, anything between expression delimiters {{ }} will be evaluated, and that’s what we are more interested in.
 Once it is confirmed that anything between expression delimiters is evaluated from this point we can send payloads to start gathering more information.
+
+**Convert string to Uppercase:**
+
+    Payload: ${{'abc'.toUpperCase()}}
+    Output: ABC
+
+
+**Concatenate two strings:**
+
+    Payload: ${{'abc'.concat('def')}}
+    Output: abcdef 
+
+
+
+**Get the class name of string:**
+
+    Payload: ${{'a'.getClass()}}
+    Output: java.lang.String
 
 
 PDF version of white paper can be downloaded from:
