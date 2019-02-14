@@ -29,24 +29,29 @@ However, in second test case we demonstrate some tricks how an attacker can stil
 
 Suppose the following lines of Code are found in an application.
 
+
 ![_config.yml]({{ site.baseurl }}/images/RCE-EL/2.PNG)
 
-1.  index.xhtml gets “name” parameter from the request and sends it to bingo():
+index.xhtml gets “name” parameter from the request and sends it to bingo():
+ 
+ 
  
  
 ![_config.yml]({{ site.baseurl }}/images/RCE-EL/3.PNG)
 
-2. Bing() evaluates argument dynamically and echo the value of “name” request parameter to the browser
+Bing() evaluates argument dynamically and echo the value of “name” request parameter to the browser
+ 
+ 
  
  
  
  ![_config.yml]({{ site.baseurl }}/images/RCE-EL/1.PNG)
  
-3. Example, the get request with parameter "name=" is sent and its value is echo in page.
+Example, the get request with parameter "name=" is sent and its value is echo in page.
 
 
 
-test1
+test2
 
 PDF version of white paper can be downloaded from:
 [ExpressionLanguageInjection.pdf](https://www.exploit-db.com/docs/46303)
