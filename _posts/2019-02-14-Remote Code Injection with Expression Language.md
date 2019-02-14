@@ -64,7 +64,12 @@ Such as:
  - #{7+7} or ${{7*7}} and then searching the response text for 49.
 
 
-test2
+
+ 
+ ![_config.yml]({{ site.baseurl }}/images/RCE-EL/4.PNG)
+In above example, anything between expression delimiters {{ }} will be evaluated, and that’s what we are more interested in.
+Once it is confirmed that anything between expression delimiters is evaluated from this point we can send payloads to start gathering more information.
+
 
 PDF version of white paper can be downloaded from:
 [ExpressionLanguageInjection.pdf](https://www.exploit-db.com/docs/46303)
