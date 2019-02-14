@@ -71,7 +71,7 @@ Such as:
 In above example, anything between expression delimiters {{ }} will be evaluated, and that’s what we are more interested in.
 Once it is confirmed that anything between expression delimiters is evaluated from this point we can send payloads to start gathering more information.
 
- ![_config.yml]({{ site.baseurl }}/images/RCE-EL/c1.PNG)
+ ![_config.yml]({{ site.baseurl }}/images/RCE-EL/C1.PNG)
 
 **Convert string to Uppercase:**
 
